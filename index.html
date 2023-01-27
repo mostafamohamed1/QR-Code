@@ -38,7 +38,7 @@
       body {
         font-family: "Outfit", sans-serif;
 
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,6 +46,7 @@
       }
 
       main {
+        --font: 15px;
         max-width: 300px;
         padding: 1.2rem;
         text-align: center;
@@ -57,14 +58,17 @@
         max-width: 100%;
         border-radius: 10px;
       }
-      h3 {
-        margin: 15px 0;
-        font-size: 20px;
+
+      h1 {
+        margin: var(--font) 0;
+        font-size: var(--font);
         font-weight: 700;
         color: var(--Dark-blue);
       }
+
       p {
-        font-size: 14px;
+        margin-bottom: var(--font);
+        font-size: var(--font);
         font-weight: 400;
         color: var(--Grayish-blue);
       }
@@ -73,7 +77,7 @@
   <body>
     <main>
       <img src="images/image-qr-code.png" alt="QR Code Pic" />
-      <h3>Improve your front-end skills by building projects</h3>
+      <h1>Improve your front-end skills by building projects</h1>
       <p>
         Scan the QR code to visit Frontend Mentor and take your coding skills to
         the next level
